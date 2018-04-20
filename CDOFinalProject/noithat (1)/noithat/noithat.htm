@@ -1,0 +1,636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title> 
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<link href="script/menutop/style.css" rel="stylesheet" type="text/css" />
+<link href="script/sdmenu/sdmenu.css" rel="stylesheet" type="text/css" />
+<link href="css/dangnhap.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+	<link href="css/tooltip.css" rel="stylesheet" type="text/css">
+	
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+<!----------END Chi tiet---------->
+<!--BANNER--->
+<!----<link rel='stylesheet' id='camera-css'  href='script/banner/camera.css' type='text/css' media='all'> --->
+<style>
+		#back_to_camera {
+			clear: both;
+			display: block;
+			height: 80px;
+			line-height: 40px;
+			padding: 20px;
+		}
+		.fluid_container {
+			margin: 0 auto;
+			max-width: 1000px;
+			width: 100%;
+		}
+</style>
+
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //		Scripts
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+    
+
+</head>
+<body>  
+<div id="wapper"> 	 
+  <div id="content">
+  	<div id="top">
+        <div id="logo">
+            <div class="hinhlogo">
+            	<span class="hinhlogo"><img src="images/logo.png" width="238" height="128" /></span>
+            </div>
+        </div>        
+        <div id="menu">
+        	<div id="dangnhap" align="right" style="font-family:SVN-Agency FB">  
+			            	  Chào bạn ,Bạn có thể <a href="#login-box" class="login-window">đăng nhập</a> hoặc <a style="text-decoration:none;color:#FC0" href="index.php?p=dangkythanhvien" class="dangky-window">tạo tài khoản</a>
+                                 
+            </div>                    
+       	  <div id="login-box" class="login-popup">  
+    <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Đóng" alt="Close" /></a>
+          <form method="post" class="signin" action="login/xulydangnhap.php">
+                <fieldset class="textbox">
+            	<label class="username">
+                <span style="font-size:16px">Username</span>
+                <input id="Username" name="Username" value="" type="text" autocomplete="on" placeholder="Username">
+                </label>
+                
+                <label class="password">
+                <span style="font-size:16px">Password</span>
+                <input id="Password" name="Password" value="" type="password" placeholder="Password">
+                </label>
+                
+                <input  class="submit button" name="Submit" type="submit" value="Đăng nhập" />               
+                <input name="xuly" type="hidden" id="xuly" value="1" />
+                </fieldset>
+          </form>
+</div>      
+        
+        
+             			
+          <ul id="MenuBar1" class="MenuBarHorizontal">
+  <li><a  class="MenuBarItemSubmenu" href="index.php?p=index" style="font-family:SVN-Agency FB">Trang Chủ</a>  	  
+  </li>  
+     <li><a  class="MenuBarItemSubmenu" href="index.php?p=gioithieu" style="font-family:SVN-Agency FB">Giới Thiệu</a>  	  
+  </li>  
+     <li><a  class="MenuBarItemSubmenu" href="index.php?p=noithat" style="font-family:SVN-Agency FB">Nội Thất</a>  	  
+  </li>  
+     <li><a  class="MenuBarItemSubmenu" href="index.php?p=tintuc" style="font-family:SVN-Agency FB">Tin Tức</a>  	  
+  </li>  
+     <li><a  class="MenuBarItemSubmenu" href="index.php?p=huongdan" style="font-family:SVN-Agency FB">Hướng dẫn</a>  	  
+  </li>  
+     <li><a  class="MenuBarItemSubmenu" href="index.php?p=khuyenmai" style="font-family:SVN-Agency FB">Khuyến Mãi</a>  	  
+  </li>  
+     <li><a  class="MenuBarItemSubmenu" href="index.php?p=lienhe" style="font-family:SVN-Agency FB">Liên hệ</a>  	  
+  </li>  
+   </ul>
+
+
+   
+          <script type="text/javascript">
+				var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+			</script>
+        </div>         
+    </div>   
+  	<div id="lefcontent">   
+        <div class="timkiem">
+                <div class="tieude-timkiem">Tìm kiếm</div>
+                 <form name="form1" method="get" action="index.php">
+  <table width="100%" border="0" style="font-family:SVN-Agency FB">
+    <tr>
+      <td style="color:#CCC" >Từ khóa</td>
+      <td style="text-align:left"><input type="text" name="tukhoa" id="tukhoa" autocomplete="on" placeholder="Nhập vào từ khóa"></td>
+    </tr>
+    <tr>
+      <td style="color:#CCC">Giá từ</td>
+      <td><select name="min" id="min" style="width:100px">        
+            	<option value="1000000">1 Triệu</option>
+            	<option value="2000000">2 Triệu</option>
+            	<option value="3000000">3 Triệu</option>
+            	<option value="4000000">4 Triệu</option>
+            	<option value="5000000">5 Triệu</option>
+            	<option value="6000000">6 Triệu</option>
+            	<option value="7000000">7 Triệu</option>
+            	<option value="8000000">8 Triệu</option>
+            	<option value="9000000">9 Triệu</option>
+            	<option value="10000000">10 Triệu</option>
+            	<option value="11000000">11 Triệu</option>
+            	<option value="12000000">12 Triệu</option>
+            	<option value="13000000">13 Triệu</option>
+            	<option value="14000000">14 Triệu</option>
+            	<option value="15000000">15 Triệu</option>
+            	<option value="16000000">16 Triệu</option>
+            	<option value="17000000">17 Triệu</option>
+            	<option value="18000000">18 Triệu</option>
+            	<option value="19000000">19 Triệu</option>
+            </select></td>
+    </tr>
+    <tr>
+      <td style="color:#CCC">Đến</td>
+      <td><select name="max" id="max" style="width:100px">
+            	<option  selected=1 value="1000000">1 Triệu</option>
+            	<option  selected=1 value="2000000">2 Triệu</option>
+            	<option  selected=1 value="3000000">3 Triệu</option>
+            	<option  selected=1 value="4000000">4 Triệu</option>
+            	<option  selected=1 value="5000000">5 Triệu</option>
+            	<option  selected=1 value="6000000">6 Triệu</option>
+            	<option  selected=1 value="7000000">7 Triệu</option>
+            	<option  selected=1 value="8000000">8 Triệu</option>
+            	<option  selected=1 value="9000000">9 Triệu</option>
+            	<option  selected=1 value="10000000">10 Triệu</option>
+            	<option  selected=1 value="11000000">11 Triệu</option>
+            	<option  selected=1 value="12000000">12 Triệu</option>
+            	<option  selected=1 value="13000000">13 Triệu</option>
+            	<option  selected=1 value="14000000">14 Triệu</option>
+            	<option  selected=1 value="15000000">15 Triệu</option>
+            	<option  selected=1 value="16000000">16 Triệu</option>
+            	<option  selected=1 value="17000000">17 Triệu</option>
+            	<option  selected=1 value="18000000">18 Triệu</option>
+            	<option  selected=1 value="19000000">19 Triệu</option>
+            </select></td>
+    </tr>
+    <tr>
+      <td ><input name="p" type="hidden" id="p" value="timkiem" /></td>
+      <td><input type="submit" name="btntim" id="btntim" value="   Tìm   "></td>
+    </tr>
+  </table>
+</form>
+        </div>
+        <div id="danhmucsanpham">
+                <div class="tieude-timkiem">Danh mục sản phẩm</div>
+                 	<a title="Sofa da" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Sofa_da">Sofa da</a>
+	<a title="Sofa ni gỗ" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Sofa_ni_go">Sofa ni gỗ</a>
+	<a title="Sofa bed" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Sofa_bed">Sofa bed</a>
+	<a title="Bàn trà" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Ban_tra">Bàn trà</a>
+	<a title="Kệ tivi" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Ke_tivi">Kệ tivi</a>
+	<a title="Tủ trưng bày- Tủ rượu" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Tu_trung_bay">Tủ trưng bày- Tủ rượu</a>
+	<a title="Giường ngủ" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Giuong_ngu">Giường ngủ</a>
+	<a title="Chăn-Ga-Gối-Nệm" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Chan_ga_goi_nem">Chăn-Ga-Gối-Nệm</a>
+	<a title="Tủ quần áo" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Tu_quan_ao">Tủ quần áo</a>
+	<a title="Tủ đầu giường" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Tu_dau_giường">Tủ đầu giường</a>
+	<a title="Bàn phấn -Đôn" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Ban_phan_don">Bàn phấn -Đôn</a>
+	<a title="Giường trẻ em" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Giuong_tre">Giường trẻ em</a>
+	<a title="Bàn học trẻ em" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Ban_hoc_tre_em">Bàn học trẻ em</a>
+	<a title="Đồ chơi - Trang trí trẻ em" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Do_choi_trang_tri">Đồ chơi - Trang trí trẻ em</a>
+	<a title="Bàn ghế phòng ăn" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Ban_ghe_phong_an">Bàn ghế phòng ăn</a>
+	<a title="Hệ tủ bếp" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=He_tu_bep">Hệ tủ bếp</a>
+	<a title="Bàn làm việc Giám đốc" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Ban_lam_viec_giam_doc">Bàn làm việc Giám đốc</a>
+	<a title="Bàn vi tinh" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Ban_vi_tinh">Bàn vi tinh</a>
+	<a title="Tủ tài liệu" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Tu_tai_lieu">Tủ tài liệu</a>
+	<a title="Bàn ghế phòng họp" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Ban_ghe_phong_hop">Bàn ghế phòng họp</a>
+	<a title="Đèn trang trí" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Den_trang_tri">Đèn trang trí</a>
+	<a title="Hoa trang trí" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=Hoa_trang_tri">Hoa trang trí</a>
+	<a title="Nội thất Tết" style="display:block;" class="dongssanpham" href="index.php?p=sphamtrongloai&TenLoai_KD=noi_that_tet">Nội thất Tết</a>
+          
+        </div>
+         <div id="hotro">     	
+                <div class="tieude-timkiem">Hỗ trợ</div>
+                <div id="hinhhotro"><a href="ymsgr:sendim?nick_cua_ban"><img src="http://opi.yahoo.com/online?u=chang_trai_phong_luu_22_12@yahoo.com&m=g&t=14" height="100" width="150"/></a>  </div>    	
+         </div>  
+        <div id="thongke">     	
+                <div class="tieude-timkiem">Thống kê truy cập</div>
+                <div id="sotruycap">
+                    <img src="Hitcounter/counter.php" />
+                </div>    	
+         </div>     
+    </div>	
+    <div id="right-content">
+          	<div id="banner">        
+        	<div class="fluid_container">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+                    <div data-thumb="" data-src="upload/hinhsilede/banner5.jpg">
+                    
+                <div class="camera_caption fadeFromBottom" align="center">
+                   <img src="upload/hinhsilede/banner4.jpg" width="714" height="350"/>               </div>
+            </div> 
+                     <div data-thumb="" data-src="upload/hinhsilede/banner4.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Sôfa phòng khách - Màu nâu                 </div>
+            </div> 
+                     <div data-thumb="" data-src="upload/hinhsilede/banner2.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Bộ bàn ghế phòng khách                </div>
+            </div> 
+                     <div data-thumb="" data-src="upload/hinhsilede/banner3.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Sôfa cho phòng làm việc                </div>
+            </div> 
+                     <div data-thumb="" data-src="upload/hinhsilede/banner1.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Sôfa cho phòng khách                </div>
+            </div> 
+                    
+        </div><!-- #camera_wrap_1 -->    	
+</div><!-- .fluid_container -->
+    
+
+           
+        </div>
+        <div id="noidung">
+        	<p>
+              <link href="../css/css.css" rel="stylesheet" type="text/css">
+<table width="100%" border="0" style="float:left" >
+	<tr>  
+    	<td >
+   			<div class="tieude-sanpham">
+				<h3>Sản phẩm mới nhất</h3>
+			</div>
+        </td>
+    </tr>
+	<tr>
+    	<td style="float:left; margin-left:5px;margin-right:5px;margin-bottom:10px" width="162px" height="280" >
+        	<table width="162" border="0" cellspacing="3" cellpadding="3" align="center" >
+           <tr>
+                <td colspan="2" height="40" style="text-align:center">
+                    <a href="#" class="tensp"> 
+                     Bàn ăn Fence</a>
+                 <img src="images/news.gif" width="20" height="12" /></td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center">
+            	<div class="thumbnail-item">
+               <a href="index.php?p=chitietsanpham&TenSP_KD= Ban_an_Fence"><img src="upload/sanpham/hinhchinh/banan02.jpg" 00="" align="center" width="156" height="128" border="0" title=" Bàn ăn Fence" alt=" Bàn ăn Fence" id="img_preview">
+                </a>
+                <div class="tooltip">
+                 <img src="upload/sanpham/hinhchinh/banan02.jpg" alt="" width="350" height="300" />
+				</div> 
+				</div>
+                 </td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center" height="25">         
+                    <span class="giaban">
+                        2,500,000 VNĐ			
+                    </span>            
+            
+             	</td>
+           </tr>              
+           <tr>
+                    <td width="140"  height="60x" >             
+
+                    	<div id="cart"><a class="dathang" idSp="686"href="index.php?p=xemgiohang">Đặt mua</a></div>       		        
+                    </td>
+           </tr>            	
+         </table>
+	</td>
+    	<td style="float:left; margin-left:5px;margin-right:5px;margin-bottom:10px" width="162px" height="280" >
+        	<table width="162" border="0" cellspacing="3" cellpadding="3" align="center" >
+           <tr>
+                <td colspan="2" height="40" style="text-align:center">
+                    <a href="#" class="tensp"> 
+                    Bộ bàn ăn Corona</a>
+                 <img src="images/news.gif" width="20" height="12" /></td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center">
+            	<div class="thumbnail-item">
+               <a href="index.php?p=chitietsanpham&TenSP_KD=Ban_ab_corona"><img src="upload/sanpham/hinhchinh/banan01.jpg" 00="" align="center" width="156" height="128" border="0" title="Bộ bàn ăn Corona" alt="Bộ bàn ăn Corona" id="img_preview">
+                </a>
+                <div class="tooltip">
+                 <img src="upload/sanpham/hinhchinh/banan01.jpg" alt="" width="350" height="300" />
+				</div> 
+				</div>
+                 </td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center" height="25">         
+                    <span class="giaban">
+                        3,000,000 VNĐ			
+                    </span>            
+            
+             	</td>
+           </tr>              
+           <tr>
+                    <td width="140"  height="60x" >             
+
+                    	<div id="cart"><a class="dathang" idSp="685"href="index.php?p=xemgiohang">Đặt mua</a></div>       		        
+                    </td>
+           </tr>            	
+         </table>
+	</td>
+    	<td style="float:left; margin-left:5px;margin-right:5px;margin-bottom:10px" width="162px" height="280" >
+        	<table width="162" border="0" cellspacing="3" cellpadding="3" align="center" >
+           <tr>
+                <td colspan="2" height="40" style="text-align:center">
+                    <a href="#" class="tensp"> 
+                     Bộ bàn ăn chữ nhật</a>
+                 <img src="images/news.gif" width="20" height="12" /></td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center">
+            	<div class="thumbnail-item">
+               <a href="index.php?p=chitietsanpham&TenSP_KD=ban_ghe_phong_an"><img src="upload/sanpham/hinhchinh/banan.jpg" 00="" align="center" width="156" height="128" border="0" title=" Bộ bàn ăn chữ nhật" alt=" Bộ bàn ăn chữ nhật" id="img_preview">
+                </a>
+                <div class="tooltip">
+                 <img src="upload/sanpham/hinhchinh/banan.jpg" alt="" width="350" height="300" />
+				</div> 
+				</div>
+                 </td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center" height="25">         
+                    <span class="giaban">
+                        2,000,000 VNĐ			
+                    </span>            
+            
+             	</td>
+           </tr>              
+           <tr>
+                    <td width="140"  height="60x" >             
+
+                    	<div id="cart"><a class="dathang" idSp="684"href="index.php?p=xemgiohang">Đặt mua</a></div>       		        
+                    </td>
+           </tr>            	
+         </table>
+	</td>
+    	<td style="float:left; margin-left:5px;margin-right:5px;margin-bottom:10px" width="162px" height="280" >
+        	<table width="162" border="0" cellspacing="3" cellpadding="3" align="center" >
+           <tr>
+                <td colspan="2" height="40" style="text-align:center">
+                    <a href="#" class="tensp"> 
+                    Vòng cổ</a>
+                 <img src="images/news.gif" width="20" height="12" /></td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center">
+            	<div class="thumbnail-item">
+               <a href="index.php?p=chitietsanpham&TenSP_KD=vòng_co"><img src="upload/sanpham/hinhchinh/dochoi2.jpg" 00="" align="center" width="156" height="128" border="0" title="Vòng cổ" alt="Vòng cổ" id="img_preview">
+                </a>
+                <div class="tooltip">
+                 <img src="upload/sanpham/hinhchinh/dochoi2.jpg" alt="" width="350" height="300" />
+				</div> 
+				</div>
+                 </td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center" height="25">         
+                    <span class="giaban">
+                        600,000 VNĐ			
+                    </span>            
+            
+             	</td>
+           </tr>              
+           <tr>
+                    <td width="140"  height="60x" >             
+
+                    	<div id="cart"><a class="dathang" idSp="683"href="index.php?p=xemgiohang">Đặt mua</a></div>       		        
+                    </td>
+           </tr>            	
+         </table>
+	</td>
+    	<td style="float:left; margin-left:5px;margin-right:5px;margin-bottom:10px" width="162px" height="280" >
+        	<table width="162" border="0" cellspacing="3" cellpadding="3" align="center" >
+           <tr>
+                <td colspan="2" height="40" style="text-align:center">
+                    <a href="#" class="tensp"> 
+                     Gấu trai gái</a>
+                 <img src="images/news.gif" width="20" height="12" /></td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center">
+            	<div class="thumbnail-item">
+               <a href="index.php?p=chitietsanpham&TenSP_KD= Gau_trai_gai"><img src="upload/sanpham/hinhchinh/dochoi.jpg" 00="" align="center" width="156" height="128" border="0" title=" Gấu trai gái" alt=" Gấu trai gái" id="img_preview">
+                </a>
+                <div class="tooltip">
+                 <img src="upload/sanpham/hinhchinh/dochoi.jpg" alt="" width="350" height="300" />
+				</div> 
+				</div>
+                 </td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center" height="25">         
+                    <span class="giaban">
+                        500,000 VNĐ			
+                    </span>            
+            
+             	</td>
+           </tr>              
+           <tr>
+                    <td width="140"  height="60x" >             
+
+                    	<div id="cart"><a class="dathang" idSp="682"href="index.php?p=xemgiohang">Đặt mua</a></div>       		        
+                    </td>
+           </tr>            	
+         </table>
+	</td>
+    	<td style="float:left; margin-left:5px;margin-right:5px;margin-bottom:10px" width="162px" height="280" >
+        	<table width="162" border="0" cellspacing="3" cellpadding="3" align="center" >
+           <tr>
+                <td colspan="2" height="40" style="text-align:center">
+                    <a href="#" class="tensp"> 
+                    Giường ngủ cao cấp</a>
+                 <img src="images/news.gif" width="20" height="12" /></td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center">
+            	<div class="thumbnail-item">
+               <a href="index.php?p=chitietsanpham&TenSP_KD=Giuong_Ngu"><img src="upload/sanpham/hinhchinh/codien3.jpg" 00="" align="center" width="156" height="128" border="0" title="Giường ngủ cao cấp" alt="Giường ngủ cao cấp" id="img_preview">
+                </a>
+                <div class="tooltip">
+                 <img src="upload/sanpham/hinhchinh/codien3.jpg" alt="" width="350" height="300" />
+				</div> 
+				</div>
+                 </td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center" height="25">         
+                    <span class="giaban">
+                        15,000,000 VNĐ			
+                    </span>            
+            
+             	</td>
+           </tr>              
+           <tr>
+                    <td width="140"  height="60x" >             
+
+                    	<div id="cart"><a class="dathang" idSp="679"href="index.php?p=xemgiohang">Đặt mua</a></div>       		        
+                    </td>
+           </tr>            	
+         </table>
+	</td>
+    	<td style="float:left; margin-left:5px;margin-right:5px;margin-bottom:10px" width="162px" height="280" >
+        	<table width="162" border="0" cellspacing="3" cellpadding="3" align="center" >
+           <tr>
+                <td colspan="2" height="40" style="text-align:center">
+                    <a href="#" class="tensp"> 
+                    Bộ bàn tṛn trẻ em + ghế lưng</a>
+                 <img src="images/news.gif" width="20" height="12" /></td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center">
+            	<div class="thumbnail-item">
+               <a href="index.php?p=chitietsanpham&TenSP_KD=B0_ban_ghe_tre_em"><img src="upload/sanpham/hinhchinh/banhoc02.jpg" 00="" align="center" width="156" height="128" border="0" title="Bộ bàn tṛn trẻ em + ghế lưng" alt="Bộ bàn tṛn trẻ em + ghế lưng" id="img_preview">
+                </a>
+                <div class="tooltip">
+                 <img src="upload/sanpham/hinhchinh/banhoc02.jpg" alt="" width="350" height="300" />
+				</div> 
+				</div>
+                 </td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center" height="25">         
+                    <span class="giaban">
+                        1,489,000 VNĐ			
+                    </span>            
+            
+             	</td>
+           </tr>              
+           <tr>
+                    <td width="140"  height="60x" >             
+
+                    	<div id="cart"><a class="dathang" idSp="672"href="index.php?p=xemgiohang">Đặt mua</a></div>       		        
+                    </td>
+           </tr>            	
+         </table>
+	</td>
+    	<td style="float:left; margin-left:5px;margin-right:5px;margin-bottom:10px" width="162px" height="280" >
+        	<table width="162" border="0" cellspacing="3" cellpadding="3" align="center" >
+           <tr>
+                <td colspan="2" height="40" style="text-align:center">
+                    <a href="#" class="tensp"> 
+                    Bộ bàn + Ghế</a>
+                 <img src="images/news.gif" width="20" height="12" /></td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center">
+            	<div class="thumbnail-item">
+               <a href="index.php?p=chitietsanpham&TenSP_KD=Bo_ban_ghe"><img src="upload/sanpham/hinhchinh/banhoc01.jpg" 00="" align="center" width="156" height="128" border="0" title="Bộ bàn + Ghế" alt="Bộ bàn + Ghế" id="img_preview">
+                </a>
+                <div class="tooltip">
+                 <img src="upload/sanpham/hinhchinh/banhoc01.jpg" alt="" width="350" height="300" />
+				</div> 
+				</div>
+                 </td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center" height="25">         
+                    <span class="giaban">
+                        1,589,000 VNĐ			
+                    </span>            
+            
+             	</td>
+           </tr>              
+           <tr>
+                    <td width="140"  height="60x" >             
+
+                    	<div id="cart"><a class="dathang" idSp="671"href="index.php?p=xemgiohang">Đặt mua</a></div>       		        
+                    </td>
+           </tr>            	
+         </table>
+	</td>
+        </tr>
+</table>
+        	</p>
+      </div>
+          </div>
+    <div class="clear"></div>
+    <div id="footer">
+		<ul>
+       
+     <li><a href="index.php?p=index">Trang Chủ</a></li>  
+     <li><a href="index.php?p=gioithieu">Giới Thiệu</a></li>  
+     <li><a href="index.php?p=noithat">Nội Thất</a></li>  
+     <li><a href="index.php?p=tintuc">Tin Tức</a></li>  
+     <li><a href="index.php?p=huongdan">Hướng dẫn</a></li>  
+     <li><a href="index.php?p=khuyenmai">Khuyến Mãi</a></li>  
+     <li><a href="index.php?p=lienhe">Liên hệ</a></li>  
+                    
+</ul>
+
+ 
+        <div class="clear"></div>
+        <div id="noidungfooter">
+        	<p>Công Ty TNHH Nội Thất MY HOME</p>
+        	<p>Địa chỉ: 177C - Trần Văn Đang -Quận 3 - TP.HCM</p>
+<p>Điện thoại: 0974.19.73.77</p>
+        </div>
+    </div>
+  `</div>
+<div id="chuchay">
+	 <marquee direction="right" onmousemove="this.stop();" onmouseout="this.start();" scrollamount="3" scrolldelay="10">
+          <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=noi_that_tet">Nội thất Tết</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Hoa_trang_tri">Hoa trang trí</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Den_trang_tri">Đèn trang trí</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Ban_ghe_phong_hop">Bàn ghế phòng họp</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Tu_tai_lieu">Tủ tài liệu</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Ban_vi_tinh">Bàn vi tinh</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Ban_lam_viec_giam_doc">Bàn làm việc Giám đốc</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=He_tu_bep">Hệ tủ bếp</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Ban_ghe_phong_an">Bàn ghế phòng ăn</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Do_choi_trang_tri">Đồ chơi - Trang trí trẻ em</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Ban_hoc_tre_em">Bàn học trẻ em</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Giuong_tre">Giường trẻ em</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Ban_phan_don">Bàn phấn -Đôn</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Tu_dau_giường">Tủ đầu giường</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Tu_quan_ao">Tủ quần áo</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Chan_ga_goi_nem">Chăn-Ga-Gối-Nệm</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Giuong_ngu">Giường ngủ</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Tu_trung_bay">Tủ trưng bày- Tủ rượu</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Ke_tivi">Kệ tivi</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Ban_tra">Bàn trà</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Sofa_bed">Sofa bed</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Sofa_ni_go">Sofa ni gỗ</a>
+	      <font color="#FFFFFF">|| </font> <a href="index.php?p=sphamtrongloai&TenLoai_KD=Sofa_da">Sofa da</a>
+	    </marquee>    
+   
+</div>   
+<style type="text/css">  
+    #co453569{display:block; margin:0; padding:0; background-color:#CCC; border-style:solid; border-width:0.5px; border-color:#111 #999 #999 #111; line-height:1.6em; overflow:hidden;border-left:solid 5px #000;border-top:solid 5px #000;color:#000;font: 12px Arial, Helvetica, sans-serif; color:#666; position:fixed; _position: absolute; right:0; bottom:0 }
+  </style>            
+        <div id="co453569" style="height:40px;width:450px"> 
+          <!-- code ads -->
+          <img src="images/cart-icon.png" width="30" height="25" style="margin-left:10px;margin-top:5px" />          
+           <div id="giohang" style="margin-top:-20px;margin-left:45px" >         
+          
+		  ﻿
+	
+
+    <span style="font-size:14px"><font color="#000000">Số sản phẩm:</font><font color="#FF0000">
+          0    </font></span>
+    
+    
+    
+    <span style="font-size:14px"><font color="#000000">Tổng tiền:</font><font color="#FF0000">
+    0    </font></span>
+    <span style="font-size:14px"> - <a style="text-decoration:none" href="index.php?p=xoagiohang"> <font color="#000000">Xóa tất cả</font></a></span>
+    <span style="font-size:14px"> - <a style="text-decoration:none" href="index.php?p=xemgiohang"><font color="#000000">Giỏ hàng</font></a></span>  
+    
+          </div>
+          <!-- code ads -->   
+      </div>   
+
+</div>
+<style type="text/css">
+#toppage1k {
+	width:100px;
+	background:#F4FFBF;
+	border:1px solid #ccc;
+	text-align:center;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	cursor:pointer;
+	color:#666;
+	text-decoration:none;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	margin-bottom: 40px;
+}
+</style>
+
+<a href="#code1k-totop" id="toppage1k"><img src="images/nutchuyen.png" width="16" height="16" /> Lên trên</a>
+
+<script type='text/javascript'>
+//<![CDATA[
+$(function(){$.fn.scrollToTop=function(){$(this).hide().removeAttr("href");if($(window).scrollTop()!="0"){$(this).fadeIn("slow")}var scrollDiv=$(this);$(window).scroll(function(){if($(window).scrollTop()=="0"){$(scrollDiv).fadeOut("slow")}else{$(scrollDiv).fadeIn("slow")}});$(this).click(function(){$("html, body").animate({scrollTop:0},"slow")})}});$(function() {
+$("#toppage1k").scrollToTop();});
+//]]>
+</script></body>
+</html>
